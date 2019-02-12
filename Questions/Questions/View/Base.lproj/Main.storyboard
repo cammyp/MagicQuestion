@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Questions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="cWe-oK-BD4">
+                                <rect key="frame" x="20" y="321" width="374" height="264"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="eDA-7I-GaN"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xwy-0n-TiM" appends="YES" id="KEo-jq-QeC"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle2" translatesAutoresizingMaskIntoConstraints="NO" id="Vrg-W5-ZTD">
+                                <rect key="frame" x="105" y="346" width="204" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="8iG-xD-LYd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask me a question about your future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7M-xc-QAe">
+                                <rect key="frame" x="20" y="416" width="374" height="74"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
+                                <color key="textColor" red="0.1836618185043335" green="0.00012220232747495174" blue="0.0039159166626632214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Shake to receive an answer)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2l-LC-cuQ">
+                                <rect key="frame" x="107.00000000000001" y="603" width="200.33333333333337" height="20.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.1836618185043335" green="0.00012220232747495174" blue="0.0039159166626632214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle3" translatesAutoresizingMaskIntoConstraints="NO" id="NCl-gi-gvw">
+                                <rect key="frame" x="156" y="388" width="102" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="hPV-ur-Pz9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89652615785598755" green="0.80279850959777832" blue="0.60780984163284302" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cWe-oK-BD4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0me-X8-xQG"/>
+                            <constraint firstItem="NCl-gi-gvw" firstAttribute="centerX" secondItem="c7M-xc-QAe" secondAttribute="centerX" id="3Qf-gi-bY5"/>
+                            <constraint firstItem="Vrg-W5-ZTD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A3T-ql-8cl"/>
+                            <constraint firstItem="cWe-oK-BD4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bjo-SL-9tl"/>
+                            <constraint firstItem="cWe-oK-BD4" firstAttribute="centerY" secondItem="c7M-xc-QAe" secondAttribute="centerY" id="Dzp-Uc-DR6"/>
+                            <constraint firstItem="x2l-LC-cuQ" firstAttribute="top" secondItem="cWe-oK-BD4" secondAttribute="bottom" constant="18" id="F77-Nj-R91"/>
+                            <constraint firstItem="cWe-oK-BD4" firstAttribute="centerX" secondItem="x2l-LC-cuQ" secondAttribute="centerX" id="JUY-3E-b3D"/>
+                            <constraint firstItem="NCl-gi-gvw" firstAttribute="centerY" secondItem="Vrg-W5-ZTD" secondAttribute="centerY" constant="-4.5" id="MkJ-0j-rJY"/>
+                            <constraint firstItem="NCl-gi-gvw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="NPN-Qc-z2v"/>
+                            <constraint firstItem="Vrg-W5-ZTD" firstAttribute="centerX" secondItem="c7M-xc-QAe" secondAttribute="centerX" id="PEZ-K9-8u3"/>
+                            <constraint firstItem="cWe-oK-BD4" firstAttribute="centerX" secondItem="c7M-xc-QAe" secondAttribute="centerX" id="RXw-JJ-jDk"/>
+                            <constraint firstItem="Vrg-W5-ZTD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="dhy-M5-ddq"/>
+                            <constraint firstItem="cWe-oK-BD4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eVY-vf-qog"/>
+                            <constraint firstItem="NCl-gi-gvw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-4.5" id="jGO-hs-qcZ"/>
+                            <constraint firstItem="c7M-xc-QAe" firstAttribute="width" secondItem="cWe-oK-BD4" secondAttribute="width" id="lA1-Hh-f9z"/>
+                            <constraint firstItem="NCl-gi-gvw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qsN-Ii-nL7"/>
+                            <constraint firstItem="c7M-xc-QAe" firstAttribute="centerY" secondItem="cWe-oK-BD4" secondAttribute="centerY" id="xrh-hv-VIW"/>
+                            <constraint firstItem="Vrg-W5-ZTD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zFe-kU-cAN"/>
+                            <constraint firstItem="x2l-LC-cuQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="za8-NC-OXk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="c7M-xc-QAe" id="aFO-0c-Ugf"/>
+                        <outlet property="circleView" destination="cWe-oK-BD4" id="yXc-B0-K8D"/>
+                        <outlet property="circleViewThree" destination="NCl-gi-gvw" id="jCH-BM-YaL"/>
+                        <outlet property="circleViewTwo" destination="Vrg-W5-ZTD" id="ncJ-OZ-J2Q"/>
+                        <outlet property="instructionLabel" destination="x2l-LC-cuQ" id="q2g-18-ceL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xwy-0n-TiM">
+                    <connections>
+                        <action selector="userTouch:" destination="BYZ-38-t0r" id="5g5-Ud-F5n"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" width="280" height="280"/>
+        <image name="circle2" width="226" height="226"/>
+        <image name="circle3" width="124" height="124"/>
+    </resources>
+</document>
